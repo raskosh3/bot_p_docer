@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  bakery-bot:
+    build: .
+    container_name: bakery-bot
+    restart: always
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - ADMIN_ID=${ADMIN_ID}
